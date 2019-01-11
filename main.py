@@ -7,7 +7,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name('Spreadsheet-3137
 
 gc = gspread.authorize(credentials)
 
-wks = gc.open('testin table').sheet1
+wks = gc.open('person Database').sheet1
 run = True
 while run:
 	option = input("1.Person erstellen \n2.Person suchen\n3.Programm verlassen\n")
@@ -26,19 +26,3 @@ while run:
 		print("Beruf : ",wks.cell(cell.row+3, cell.col).value)
 	else:
 		run = False
-	
-
-
-
-
-
-
-
-
-
-
-#print(wks.get_all_records())
-#wks.append_row(['waaaaaaaaa','weeeeeee'])
-
-#print(wks.col_values(1))
-#print(wks.cell(1,1).value)
