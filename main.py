@@ -22,7 +22,7 @@ while run:
 		wks.update_cell(cell.row, cell.col+1, 'next')
 		print("-----------------------------------------")
 	elif option == "2":
-		cell = wks.find(input("Gebe den Vor oder Nachnamen ein!\n"))
+		cell = wks.find(input("Gebe den Vornamen ein!\n"))
 		print("-----------------------------------------")
 		print("Vorname : ",cell.value)
 		print("Nachname : ",wks.cell(cell.row+1, cell.col).value)
